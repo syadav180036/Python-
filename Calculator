@@ -19,26 +19,26 @@ choice =int(input("enter your choice :"))
 
 
 if choice==1:
-    a=int(input("enter 1st no :"))
-    b=int(input("enter 1st no :"))
-    if (a!=0 and b!=0):              # nested if, else statement you can use same for others as well.
+    a=float(input("enter 1st no :"))
+    b=float(input("enter 2st no :"))
+    if (a!=0 and b!=0):              # nested if else11
         print("Answer:", add(a,b))
     else:
         print("Try gratter the 0")
 elif choice==2:
-    a=int(input("enter 1st no :"))
-    b=int(input("enter 1st no :"))
+    a=float(input("enter 1st no :"))
+    b=float(input("enter 2st no :"))
     print("Answer:", sub(a,b))
 if choice==3:
-    a=int(input("enter 1st no :"))
-    b=int(input("enter 1st no :"))
+    a=float(input("enter 1st no :"))
+    b=float(input("enter 2st no :"))
     print("Answer:", mul(a,b))
 if choice==4:
-    a=int(input("enter 1st no :"))
-    b=int(input("enter 1st no :"))
+    a=float(input("enter 1st no :"))
+    b=float(input("enter 2st no :"))
     print("Answer:", div(a,b))
 if choice==5:
-    j=int(input("enter 1st no :"))
+    j=float(input("enter 1st no :"))
     r=sqroot(j)
     print("Answer:", r)
 else:
