@@ -1,0 +1,189 @@
+#list and its function
+#its store multipal value and of different datatype and it is mutable(can be changed).
+
+list=[2,4,64,3,2,4]
+print(list)
+print(type(list))
+print(len(list))
+print(list[2:3])
+print(list[2:]) # it will take last value as len(list)
+print(list[:3]) # it will take first value as 0
+list.append(667) # it will upadete the list from last
+list.sort() # it will sort ths list in accending order
+list.sort(reverse=True)# it will sort ths list in decending order
+list.reverse() # reverse the list
+list.insert(2, 45) # it will insert the 45 at 2 position
+list.remove(2)# it will locate 2 in list once he got his first occerance he will removo it.
+list.pop(1) # it will remove element at index 1
+print(list)
+
+#palindrom example
+
+list=[2,4,64,3,2,4]
+u=list.copy()
+u.reverse()
+if (u==list):
+    print("list is palindrome")
+else:
+    print("list is not palindrom")
+print(u,list)
+
+
+#Tuples and its function
+#its store multipal value and of different datatype and it is immutable(can not be changed).
+
+tup=("sandeep",34,55,6,76,6)
+print(tup)
+tup.index(6) # it will tell you when 1st time 6 occoured
+tup.count(6) # show the count of how many time element occoured in tuple
+tup=() #blank tuples
+tup=(1,) # singal value tuples
+ # most fun is same as list expect update the list in any form that fun will not work here as tuple is immutable.
+
+
+
+
+# def add(x, y):
+#     return x + y
+
+# def subtract(x, y):
+#     return x - y
+
+# def multiply(x, y):
+#     return x * y
+
+# def divide(x, y):
+#     if y != 0:
+#         return x / y
+#     else:
+#         return "Error: Cannot divide by zero!"
+
+# print("Welcome to shubham Calculator!")
+# print("Choose operation:")
+# print("1. Add")
+# print("2. Subtract")
+# print("3. Multiply")
+# print("4. Divide")
+
+# # Take user choice
+# choice = input("Enter choice (1/2/3/4): ")
+
+# # Take input numbers
+# num1 = float(input("Enter first number: "))
+# num2 = float(input("Enter second number: "))
+
+# # Perform calculation based on choice
+# if choice == '1':
+#     print("Result:", add(num1, num2))
+# elif choice == '2':
+#     print("Result:", subtract(num1, num2))
+# elif choice == '3':
+#     print("Result:", multiply(num1, num2))
+# elif choice == '4':
+#     print("Result:", divide(num1, num2))
+# else:
+#     print("Invalid input!")
+
+
+# _87_=100
+# print ("Hell\nhello sandeep", 7, "hy", sep="@", end="90")
+# print("datatype", type(_87))
+# print (3*4)
+# print (_87_)
+# import calendar 
+# import random
+# import math
+# print (math.sqrt(5))
+# print (calendar.month(2024,1))
+# print (random.randint(1000,9999))
+
+# x=int(input("Enter the first number"))
+# y=int(input("Enter the second number"))
+# print(,"+",b)
+
+# b=input("room no please")
+# print(int(b))
+# b=int(input("room avalable"))
+# print(b)
+
+# a=(input("enter your name: "))
+# print("my name is ", a)
+# a="Sandeep"
+# for character in a:
+#     print(character)
+# name="Yadav"
+# print("Surender,"+ name)
+# a="harry err rf"
+# print(a.split(" "))
+# #b=len(a)
+# print(len(a))
+# print(a[-4:-2])
+# Sandeep= ''' Helo 
+# man 
+# what 
+# up'''
+# print(Sandeep)
+ 
+#   pyramid
+# rows = int(input("Enter number of rows: "))
+
+# for i in range(1, rows + 1):
+#     print(" " * (rows - i) + "*" * (2 * i - 1))
+
+# while loop
+# i=int(input("enter no"))
+# while (i<=30):
+#     print(i)
+#     i=int(input("enter 2no"))
+# print("done bro") 
+
+# a=int(input("first no"))
+# b=int(input("second no"))
+# c=int(input("1st no"))
+# d=int(input("2nd no"))
+
+
+
+# def sandy(y, z):
+#   x=(y*z)/(y+z)
+# #  print(x)
+#   return x
+# def graterno(y, z):
+#   if (y>z):
+#     print("first no is grater")
+#   else:
+#     print("second no is grater")
+  
+# def lessthen(y, z):
+#   pass
+    
+# f=sandy(a,b)
+# t=sandy(c,d)
+# print(f)
+# print(t)
+# graterno(a, b)
+# graterno(c,d)
+ 
+
+
+ 
+# x=[10, 3, 3, 33, 34,44,45]
+# print(len(x))
+# print(x[1:2])
+# print(x)
+# print(x[1:7:2])
+
+
+# x=[i*i for i in range(6)]
+# print(x)
+# n= int(input("NO"))
+# def factorial(n):
+#   if (n==0):
+#       return 0
+#   elif (n==1):
+#       return 1
+#   else:
+#       return n * factorial(n-1)
+      
+# g=factorial(n)
+# print(g)
