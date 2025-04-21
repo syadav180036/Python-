@@ -1,0 +1,77 @@
+#OOP ex without self
+
+class First:
+    name = "Sandeep"
+    age = 25
+g= First()
+g.age=24
+print(g.name, g.age)
+
+#ex with self 
+
+class Empms:
+    company = "MS" # class attribule
+    def __init__ (self, name, sal, dep): #
+        self.name = name
+        self.sal = sal
+        self.dep = dep
+        
+a = Empms("Sandeep",13888,"IT") #object or instance attribute
+print(f"First emp name {a.name} sallery {a.sal} his Department is {a.dep} in cpmpany {a.company}")
+    
+b = Empms("Deepak",1223444,"IT") #object or instance attribute
+print(f"second emp name {b.name} sallery {b.sal} his Department is {b.dep} in cpmpany {b.company}")
+
+#calculating square root with print 
+class Cal:
+    def __init__(self, n):
+        self.n = n
+    def sqroot(self):
+        print(f"Square root is {self.n*self.n}")
+       
+c = Cal(6)
+c.sqroot()
+
+#calculating square root with return 
+
+class Cal:
+    def __init__(self, n):
+        self.n = n
+    def sqroot(self):
+        #print(f"Square root is {self.n*self.n}")
+        return self.n*self.n
+c = Cal(7)
+t=c.sqroot()
+print(t)
+
+
+# multi level inharitance example with super() and staticmethod  
+
+class Z:
+    lang = "py"
+    def __init__(self):
+        print("first class")
+    @staticmethod #don't need to pass self atrbute while calling.
+    def hr():
+        print("no work")
+class Y(Z):
+    name = "Sandeep"
+    
+    def __init__(self, dob):
+        self.dob = dob
+        super().hr() #super key to access metod of super class
+        print("second class")
+class X(Y):
+    how = "Depth"
+    
+    def __init__(self, doj):
+        self.doj = doj
+        print("Thired class")
+        
+    def add(self, quality):
+        self.quality = quality
+
+x = X(23)
+x.add("good")
+y = Y(55)
+print(f"{x.name} is laerning {x.lang} in {x.how} and its dob {y.dob} and DOJ {x.doj} and its quality is {x.quality}")
